@@ -1,4 +1,5 @@
- # Resume LaTeX File
+ # LaTeX Resume
+## [Click](https://github.com/atharao/Latex_Resume/blob/main/Resume%20pdf/Rao_Athar_khan_Resume.pdf) to see mine :)
 
 * This repository contains the LaTeX source code for my professional resume. 
 * LaTeX is a typesetting system commonly used for creating high-quality documents with complex formatting. 
@@ -22,4 +23,5 @@
 ```
     pdflatex Resume_File.tex
 ```
-5. **View Your Resume**: You'll find the generated PDF file named Resume_File.pdf. Open it with a PDF viewer to see your resume in its final format.
+5. **View Your Resume**: You'll find the generated PDF file named Resume_File.pdf 
+Open it with a PDF viewer to see your resume in its final format.
