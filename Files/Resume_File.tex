@@ -1,0 +1,196 @@
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Rao Athar Khan}
+\tagline{Software Developer}
+
+\photoR{2.5cm}{passportsize.jpg}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \faEnvelope{raoathar.200@gmail.com}
+%   \phone{000-00-0000}
+  \linkedin{atharao}
+  \twitter{@atharao_}
+  \github{atharao}
+  \location{Roorkee, India}
+  
+ 
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{k3S Projects India Pvt Ltd}} {Blockchain Intern} 
+{July 2012 -- Ongoing}{Remote}
+\begin{itemize}
+\item  Developed skills in DAOs, smart contracts, and Web3 identities.\\ 
+Experience with Ethereum networks like Sepolia and Görli Testnet.
+\item Created IPFS website with Web3 identity for decentralized content hosting and identity management.
+\item Established NFT marketplace using third-party tools, currently working on NFT gated website. Explored NFT significance.
+\item Tested blockchain functionality with smart contracts and test tokens.\\
+Familiar with Polygon network features.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Hacktoberfest}}{Open Source Contributor}{Oct 2021 --  Oct 2021}{Remote}
+\begin{itemize}
+\item  Contributed to Python-based open-source projects, demonstrating \\proficiency in the language
+\item  Joined multiple repositories on platforms like GitHub and collaborated with the developer community
+\item  Reviewed and merged 4 pull requests from other contributors, ensuring code quality and fostering collaboration
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Google Code-in  {\hspace{5.1cm}\color{accent} \faGoogleDrive \href{https://drive.google.com/file/d/1qpcy8eGj7i0lX0lX0ow-Amwl9bMOJhl0/view?usp=drive_link}{\small \normalfont \hspace{1mm}Credential}}}}{Student Developer}{Oct 2018 -- Dec 2018}{Remote}
+\begin{itemize}
+\item Completed 3 tasks in Google Code-in 2018, contributing to open source projects.
+\item Tasks included getting familiar with Git and Github functionalities and interacting with various projects of Fedora.
+\end{itemize}
+
+
+\divider
+
+
+\cvsection{PROJECTS}
+
+\begin{itemize}
+    \item {\color{black} \normalsize \textbf{Supply Chain Management System using Blockchain}} \hfill {\color{accent} \faGithub \href{https://github.com/atharao/Supply-Chain-Management-using-Blockchain}{ \hspace{0.5mm}Code}}
+    \begin{itemize}
+        \item Led the development of transparent supply chain using smart \\contracts (Solidity, Truffle, Ganache). 
+        \item Integrated MetaMask for secure transactions, utilized IPFS for\\ decentralized document storage.
+    \end{itemize}
+
+    \item {\color{black} \normalsize \textbf{Web Scraping using Python}} \hfill {\color{accent} \faGithub \href{https://github.com/atharao/Flipkart_Scraper}{ \hspace{0.5mm}Code}}
+    \begin{itemize}
+        \item Created a Python-based web scraping tool using Beautiful Soup \\and argparse.
+        \item It extract, process, and present structured Flipkart website data \\in tabular form with PrettyTable, with CSV output generation.
+    \end{itemize}
+
+    \item {\color{black} \normalsize \textbf{Single-Page Music Streaming Website: Spotify Clone}} \hfill {\color{accent} \faGithub \href{https://github.com/atharao/Spotify_Clone}{ \hspace{0.5mm}Code}}
+    \begin{itemize}
+        \item  Designed and implemented a Spotify-inspired clone utilizing \\HTML, CSS, and JavaScript.
+    \end{itemize}
+    
+    \item {\color{black} \normalsize \textbf{Login-registration-portal}} \hfill {\color{accent} \faGithub \href{https://github.com/atharao/Login-registration-portal-updated}{ \hspace{0.5mm}Code}}
+    \begin{itemize}
+        \item Designed and developed a dynamic web application using Flask \\offering user registration and login functionalities.
+    \end{itemize}
+\end{itemize}
+
+
+\switchcolumn
+
+
+\cvsection{TECHNICAL SKILLS}
+{\color{black} \normalsize\textbf{Programming Languages}
+
+\cvtag{ Python}
+\cvtag{C++}
+\cvtag{C}
+\cvtag{Java}
+
+\divider\smallskip
+
+\textbf{Web Development}
+
+\cvtag{HTML}
+\cvtag{CSS}
+
+\divider\smallskip
+
+\textbf{Development Tools}
+
+\cvtag{Visual Studio Code}
+\cvtag{Ganache}
+\cvtag{Remix IDE}
+
+\divider\smallskip
+
+\textbf{Version Control}
+
+\cvtag{Git}
+\cvtag{GitHub}
+
+\cvsection{Soft skills}
+\cvtag{Good Communication Skills}
+\cvtag{Dedicated}\\
+\cvtag{Teamwork}
+\cvtag{Leadership}
+\cvtag{Time management}\\
+
+\cvtag{Adaptability}
+\cvtag{Multitasking}
+\cvtag{Quick Learner}
+
+\cvsection{certifications}
+
+\cvevent{Blockchain in Depth Certificate }{Infosys Springboard   {\hspace{1.5cm}\color{accent} \faGoogleDrive \href{https://drive.google.com/file/d/1u3sAtxn2AyYBGm8L4Zcy0A9z4UH1OU6T/view?usp=sharing}{\small \normalfont \hspace{1mm}Credential}}}{July 2023 -- Aug 2023}{}
+
+\divider
+
+\cvevent{Python Programming Certificate }{COER University{\hspace{2cm}\color{accent} \faGoogleDrive \href{https://drive.google.com/file/d/17ZpnVyLMREdAYFSFdDHhDYGuKZx4jhYB/view?usp=sharing}{\small \normalfont \hspace{1mm}Credential}}}{May 2021 -- Sep 2021}{}
+
+\divider
+
+\cvevent{Google Code-in (GCI) 2018 }{Google{\hspace{3.5cm}\color{accent} \faGoogleDrive \href{https://drive.google.com/file/d/1SOEVA5ePSBnbpdfUg7A5komGM_E8FCFj/view?usp=sharing}{\small \normalfont \hspace{1mm}Credential}}}{Oct 2018 -- Dec 2018}{}
+
+\cvsection{Education}
+
+\cvevent{B.Tech - Information Technology}{Uttarakhand Technical University}{Aug 2020 -- July 2018}{}
+
+\divider
+
+\cvevent{Intermediate - Computer Science }{Army Public School No. 1 Roorkee }{July 2018 -- July 2019}{}
+
+
+\end{paracol}
+
+\end{document}
